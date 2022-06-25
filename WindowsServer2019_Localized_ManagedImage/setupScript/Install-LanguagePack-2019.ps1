@@ -20,7 +20,7 @@ $date = Get-Date
 Write-Output "Create Language Pack Path:"$date >> c:\buildCheckPoint\azureImageBuilder.txt
 
 #Install Language Pack
-C:\windows\system32\Lpksetup.exe /i ja-JP /r /p $lppath
+C:\windows\system32\Lpksetup.exe /i ja-JP /r /s /p $lppath
 
 #Wait Install Process
 Wait-Process -Name lpksetup
